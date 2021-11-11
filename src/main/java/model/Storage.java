@@ -1,7 +1,5 @@
 package model;
 
-import java.util.Set;
-
 import users.User;
 
 public interface Storage {
@@ -13,4 +11,6 @@ public interface Storage {
 	
 	public int setSize(int size);
 	//public boolean noMemory(String error);
+	
+	public Directory rootDirectory(String path);
 }

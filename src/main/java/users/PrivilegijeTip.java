@@ -1,5 +1,5 @@
 package users;
 
 public enum PrivilegijeTip {
-	SAVE, DOWNLOAD, DELETE, LOOKUP, CREATOR
+	SAVE, DOWNLOAD, DELETE, LOOKUP, ROOTUSER
 }
