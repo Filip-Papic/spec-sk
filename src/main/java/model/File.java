@@ -7,7 +7,8 @@ public interface File {
 	public void create(String path, String name);
 	public void delete(String path, String name);
 	public void move(String path1, String path2);
-	public void lookup(String path, String name);
+	public java.io.File[] lookup(String path, String name);
+	
 	public void downloadDrive(String name, String id);
 	public void uploadDrive(String name, String id);
 
