@@ -6,7 +6,7 @@ public interface File {
 
 	public void create(String path, String name);
 	public void delete(String path, String name);
-	public void move(String path, String name);
+	public void move(String path1, String path2);
 	public void lookup(String path, String name);
 	public void download(String path, String name);
 
