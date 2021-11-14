@@ -8,7 +8,8 @@ public interface File {
 	public void delete(String path, String name);
 	public void move(String path1, String path2);
 	public void lookup(String path, String name);
-	public void download(String path, String name);
+	public void downloadDrive(String name, String id);
+	public void uploadDrive(String name, String id);
 
 	public void lookupAllFilesinDir(String path, String name);
 	public void lookupAllFilesInWholeDir(String path, String name);
