@@ -8,7 +8,7 @@ public class Privilegije {
 	private File file;
 	
 	//mora hijerarhija 
-	
+
 	public Privilegije(File file, boolean snimanje, boolean preuzimanje, boolean brisanje, boolean pregled) {
 		this.snimanje = snimanje;
 		this.preuzimanje = preuzimanje;
