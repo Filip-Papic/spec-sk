@@ -1,14 +1,15 @@
 package users;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class User {
 	
 	private boolean isRootUser;
 	private String ime;
 	private String lozinka;
-  //private ArrayList<Privilegije> privilegije;
-	private ArrayList<PrivilegijeTip> privilegije;
+	//private List<PrivilegijeTip> privilegije = new ArrayList<>();
+	private List<Privilegije> privilegije = new ArrayList<>();
 	
 	public User(String ime, String lozinka) {
 		this.ime = ime;
@@ -16,7 +17,7 @@ public class User {
 		isRootUser = false;
 	}
 
-	public User(boolean isRootUser, String ime, String lozinka, ArrayList<PrivilegijeTip> privilegije) {
+	public User(boolean isRootUser, String ime, String lozinka, List<Privilegije> privilegije) {
 		super();
 		this.isRootUser = isRootUser;
 		this.ime = ime;
@@ -40,11 +41,11 @@ public class User {
 		this.lozinka = lozinka;
 	}
 
-	public ArrayList<PrivilegijeTip> getPrivilegije() {
-		return privilegije;
+	public ArrayList<Privilegije> getPrivilegije() {
+		return (ArrayList<Privilegije>) privilegije;
 	}
 
-	public void setPrivilegije(ArrayList<PrivilegijeTip> privilegije) {
+	public void setPrivilegije(ArrayList<Privilegije> privilegije) {
 		this.privilegije = privilegije;
 	}
 
@@ -55,4 +56,12 @@ public class User {
 	public void setRootUser(boolean isRootUser) {
 		this.isRootUser = isRootUser;
 	}
+
+	@Override
+	public String toString() {
+		return "User [isRootUser=" + isRootUser + ", ime=" + ime + ", lozinka=" + lozinka
+				+ ", privilegije=" + privilegije + "]";
+	}
+	
+	
 }
