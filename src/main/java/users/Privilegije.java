@@ -1,20 +1,16 @@
 package users;
 
-import java.io.File;
-
 public class Privilegije {
 
 	private boolean snimanje, preuzimanje, brisanje, pregled;
-	private File file;
 	
 	//mora hijerarhija 
 
-	public Privilegije(File file, boolean snimanje, boolean preuzimanje, boolean brisanje, boolean pregled) {
+	public Privilegije(boolean snimanje, boolean preuzimanje, boolean brisanje, boolean pregled) {
 		this.snimanje = snimanje;
 		this.preuzimanje = preuzimanje;
 		this.brisanje = brisanje;
 		this.pregled = pregled;
-		this.file = file;
 	}
 
 	public boolean isSnimanje() {
@@ -49,11 +45,9 @@ public class Privilegije {
 		this.pregled = pregled;
 	}
 
-	public File getFile() {
-		return file;
-	}
-
-	public void setFile(File file) {
-		this.file = file;
+	@Override
+	public String toString() {
+		return "Privilegije [snimanje=" + snimanje + ", preuzimanje=" + preuzimanje + ", brisanje=" + brisanje
+				+ ", pregled=" + pregled + "]";
 	}	
 }
