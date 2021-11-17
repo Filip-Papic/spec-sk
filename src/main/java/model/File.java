@@ -5,6 +5,8 @@ import users.User;
 public interface File {
 
 	public void create(String path, String name);
+	public void createMultiple(String path, String name, int amount);
+	
 	public void delete(String path, String name);
 	public void move(String path1, String path2);
 	public java.io.File[] lookup(String path, String name);

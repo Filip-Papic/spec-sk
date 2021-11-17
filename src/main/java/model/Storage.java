@@ -4,6 +4,8 @@ import users.User;
 
 public interface Storage {
 
+	public void create(String path, String name);
+	
 	public String getPath();
 	public String getName();
 	public User getUser();
