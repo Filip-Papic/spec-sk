@@ -4,7 +4,8 @@ import users.User;
 
 public interface Storage {
 
-	public void create(String path, String name);
+	public void createDir(String path, String name);
+	public void deleteDir(String path, String name);
 	
 	public String getPath();
 	public String getName();
