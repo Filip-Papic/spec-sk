@@ -6,6 +6,7 @@ public interface Storage {
 
 	public void createDir(String path, String name);
 	public void deleteDir(String path, String name);
+	public void moveDir(String path1, String path2);
 	
 	public String getPath();
 	public String getName();

@@ -5,6 +5,8 @@ import users.User;
 public interface Directory {
 
 	public void create(String path, String name);
+	public void createMultiple(String path, String name, int amount);
+	
 	public void delete(String path, String name);
 	public void move(String path1, String path2);
 	public int fileCount(int fileCount);
