@@ -12,6 +12,9 @@ public interface Storage {
 	public void uploadFile(String dest, String... paths);
 	public void downloadFile(String... paths);
 	
+	public void listFilesInDir(String fileID);
+	public void listDirsInDir(String fileID);
+	
 	public void createFile(String path, String name);
 	public void createMultipleFiles(String path, String name, int i);
 	public void deleteFile(String path, String name);
