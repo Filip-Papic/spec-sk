@@ -15,6 +15,9 @@ public interface Storage {
 	public void listFilesInDir(String fileID);
 	public void listDirsInDir(String fileID);
 	
+	public void findFIlesByName(String name);
+	public void listFilesByCreationDate(String operator, String date);
+	
 	public void createFile(String path, String name);
 	public void createMultipleFiles(String path, String name, int i);
 	public void deleteFile(String path, String name);
