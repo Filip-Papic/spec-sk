@@ -69,6 +69,7 @@ public interface Storage {
 
 	public void findFIlesByName(String name);
 	public void listFilesByCreationDate(String operator, String date);
+	//test?
 	
 
 
