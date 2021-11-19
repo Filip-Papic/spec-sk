@@ -6,6 +6,13 @@ public class Privilegije {
 	
 	//mora hijerarhija 
 
+	/**
+     * Creates privilages 
+     * @param snimanje - can user save files
+     * @param preuzimanje - can user download files
+     * @param brisanje - can user delete files
+     * @param pregled - can user look for files
+     */
 	public Privilegije(boolean snimanje, boolean preuzimanje, boolean brisanje, boolean pregled) {
 		this.snimanje = snimanje;
 		this.preuzimanje = preuzimanje;
