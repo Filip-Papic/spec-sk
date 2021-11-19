@@ -9,6 +9,10 @@ public interface File {
 	
 	public void delete(String path, String name);
 	public void move(String path1, String path2);
+	
+	public void upload(String path, String dest);
+	public void download(String path);
+	
 	public java.io.File[] lookup(String path, String name);
 	
 	public void downloadDrive(String name, String id);

@@ -9,6 +9,9 @@ public interface Storage {
 	public void deleteDir(String path, String name);
 	public void moveDir(String path1, String path2);
 	
+	public void uploadFile(String dest, String... paths);
+	public void downloadFile(String... paths);
+	
 	public void createFile(String path, String name);
 	public void createMultipleFiles(String path, String name, int i);
 	public void deleteFile(String path, String name);
