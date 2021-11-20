@@ -1,6 +1,8 @@
 package model;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Set;
 
 import users.User;
 
@@ -77,14 +79,15 @@ public interface File {
 	 * @param name - file name to look for
 	 * @return
 	 */
-	public java.io.File[] lookup(String path, String name);
+	public List<String> lookup(String path, String name);
 
 	/**
 	 * Return all file names in directory
 	 * 
 	 * @param path - path to directory where to look
+	 * @return 
 	 */
-	public void lookupAllFilesinDir(String path);
+	public Set<String> lookupAllFilesinDir(String path);
 	
 	/**
 	 * Find all file names in directory
