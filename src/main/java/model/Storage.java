@@ -71,7 +71,7 @@ public interface Storage {
 	public void listFilesByCreationDate(String operator, String date);
 	//test?
 	
-
+	public boolean checkRoot(String fileID);
 
 	/**
 	 * Create new file
